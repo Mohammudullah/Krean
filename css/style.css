@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    scroll-behavior: unset !important;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+section {
+    overflow: hidden;
+}
+.preloader {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.loader {
+    width: 139px;
+    height: 65px;
+    background: url('../images/KREAN.png');
+    animation: loader 1s infinite linear;
+    -webkit-animation: loader 1s infinite linear;
+}
+@keyframes loader{
+    0%{ transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+    50%{ transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -ms-transform: scale(1.2); -o-transform: scale(1.2); }
+    100%{ transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+}
+
+/*navber section start*/
+.navbar {
+    background: none;
+    transition:.4s;
+    -webkit-transition:.4s;
+    -moz-transition:.4s;
+    -ms-transition:.4s;
+    -o-transition:.4s;
+}
+.navbar .active a {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+.navbar-brand {
+    font: 500 47px/65px 'Poppins', sans-serif;
+    letter-spacing: -0.04px;
+    color: #FFFFFF !important;
+}
+.nav-link {
+    font: 700 25px/28px 'Ubuntu', sans-serif;
+    letter-spacing: -0.04px;
+    padding: 0 !important;
+    margin-right: 65px;
+    color: #FFFFFF !important;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.navbar .nav-link:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+li:last-child .nav-link {
+    margin-right: 0px;
+}
+.navbar-brand {
+    padding: 0px;
+}
+.navbar {
+    padding-top: 80px;
+}
+#banner {
+    background: #616161;
+}
+.gradient {
+    background: linear-gradient( rgba(47,61,252,.3),rgba(100,17,135,.3),rgba(100,17,135,.3));
+}
+.carousel-item {
+    opacity: .7;
+}
+.navbar .social-icon {
+    display: none;
+}
+.navbarafterscroll {
+    padding-top: 10px;
+    background: rgba(0,0,0,.9);
+}
+@media only screen and (max-width: 600px) {
+    .navbar {
+        padding-top: 10px;
+        background: #202020;
+    }
+    .nav-link {
+        font: 300 20px/28px 'Ubuntu', sans-serif;
+        letter-spacing: -0.04px;
+        padding-right: 200px!important;
+        padding-bottom: 17.7px !important;
+        color: #FFFFFF !important;
+        margin-top: 18.3px;
+        border-bottom: 3px solid #FFFFFF;
+        width: 250px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        
+    }
+    .navbar-brand {
+        font: 500 27px/30px 'Poppins', sans-serif;
+    }
+    .navbar .social-icon {
+        display: block;
+        margin-top: 76.3px;
+        margin-bottom: 34.3px;
+
+    }
+    .navbar li.social-icon .nav-link {
+        border: none !important ;
+        margin-top: 0px;
+        padding-bottom: 0px!important;
+        width: auto;
+        display: inline-block !important;
+        margin-right: 0px !important;
+        padding-right: 0px !important;
+    }
+    .nav-toggler-button {
+        margin-top: 0;
+    }
+    .navbar-toggler {
+        box-shadow: none !important;
+        font-style: 0;
+    }
+    .navbar .active a {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+    }
+    .navbar .nav-link:hover {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+    }
+    .preloader {
+        width: 100%;
+        height: 100%;
+        background: black;
+        position: fixed;
+        z-index: 9999999999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*navber section end*/
+/*banner section start*/
+#banner h1 {
+    color: #FFFFFF;
+    font: 700 70px/78px 'Ubuntu', sans-serif;
+}
+#banner h5 {
+    color: #FFFFFF;
+    font: 300 40px/45px 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    #banner {
+        margin-top: 50px;
+    }
+    #banner h1 {
+        font: 700 30px/38px 'Ubuntu', sans-serif;
+    }
+    #banner h5 {
+        color: #FFFFFF;
+        font: 300 20px/22px 'Ubuntu', sans-serif;
+    }
+}
+/*banner section end*/
+/*service section start*/
+#service {
+    padding-top: 143.2px;
+    padding-bottom: 134px;
+}
+#service h2 {
+    color: #303030;
+    font: 700 59.92px/67px 'Ubuntu', sans-serif;
+}
+ h3 {
+    color: #303030;
+    font: 500 30px/34px 'Ubuntu', sans-serif;
+    position: relative;
+    margin-bottom: 111px;
+}
+ h3:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: -15px;
+    background: #4A4A4A;
+    left: 50%;
+
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#service .service-item {
+    max-width: 470px;
+    margin-bottom: 115px;
+}
+#service .service-item h4 {
+    font: 700 45px/52.61px 'Ubuntu', sans-serif;
+    color: #787878;
+    margin-top: 62.1px;
+}
+#service .service-item p {
+    font: 300 20px/30px 'Roboto', sans-serif;
+    text-align: left;
+    padding-top: 62.5px;
+    color: #5F5F5F;
+    letter-spacing: -0.04px;
+}
+#service .getintouch {
+    font: 500 24.13px/29px 'Roboto', sans-serif;
+    background: linear-gradient(to top, rgba(0,6,90,.74) 0%,rgba(69,0,99, .74) 80%,rgba(52,0,74,.59) 100%);
+    border-radius: 31.52px;
+    -webkit-border-radius: 31.52px;
+    -moz-border-radius: 31.52px;
+    -ms-border-radius: 31.52px;
+    -o-border-radius: 31.52px;
+    color: white;
+    outline: none;
+    border: none;
+}
+#service .getintouch.btn {
+    padding: 17px 68px;
+}
+/*service section end*/
+/*work section start*/
+#work {
+    background: #EBEBEB;
+    padding-top: 61.3px;
+    padding-bottom: 110px;
+}
+#work h3 {
+    margin-bottom: 63px;
+}
+.work-img-item {
+   max-width: 450px;
+    margin-bottom: 25px;
+    position: relative;
+}
+#work .work-img-item:hover:after {
+    opacity: .42;
+}
+#work .work-img-item:hover .work-doc {
+    opacity: 1;
+}
+#work .work-img-item:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: linear-gradient(to top,#2F3DFC,#641187,#641187);
+    opacity: .42;
+    opacity: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+#work .work-doc {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    margin-left: 51px;
+    margin-bottom: 75.7px;
+    opacity: 0;
+    transition: .4s;
+}
+#work .work-doc a {
+    font: 700 30px/34px 'Ubuntu', sans-serif;
+    letter-spacing: -0.04px;
+    color: #FFFFFF;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+#work .work-doc a:hover {
+    color: #e7e7e7;
+    text-decoration: underline;
+}
+#work .work-doc .project-time {
+    font: 300 30px/34px 'Ubuntu', sans-serif;
+    letter-spacing: -0.04px;
+    color: #FFFFFF;
+}
+/*work section end*/
+/*References section start*/
+#references {
+    padding-top: 104.3px;
+    padding-bottom: 95px;
+}
+#references .image-item {
+    padding-left: 33px;
+    padding-bottom: 33px;
+    position: relative;
+}
+#references .image-item svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+#references h5 {
+    font: 700 44.83px/50px 'Ubuntu', sans-serif;
+    letter-spacing: -0.04px;
+    padding-bottom: 40.6px;
+}
+#references p {
+    font: 300 25px/30px 'Ubuntu', sans-serif;
+    letter-spacing: -0.04px;
+    max-width: 967px;
+}
+#references .next {
+    left: -60px;
+}
+#references .prev {
+    right: -60px;
+}
+#references .next svg, #references .prev svg {
+    cursor: pointer;
+}
+#references .image-item svg {
+    width: 300px;
+    height: 300px;
+}
+#references .brand-logo a {
+    max-width: 165px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+#references .brand-logo {
+    margin-top: 99px;
+}
+#references .brand-logo img {
+    width: 100%;
+}
+#references .brand-logo a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+    #references .next {
+        display: none !important;
+    }
+    #references .prev {
+        display: none !important;
+    }
+    #references .image-item {
+        margin-bottom: 50px;
+    }
+    #references .image-item svg {
+        max-width: 357px;
+        max-height: 357px;
+    }
+    #references .brand-logo .logo-item {
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 1365px) {
+    #references .next {
+        left: -100px;
+    }
+    #references .prev {
+        right: -100px;
+    }
+    #references .image-item svg {
+        width: 357px;
+        height: 357px;
+    }
+}
+/*References section end*/
+/*contact section start*/
+#contact {
+    background: #000000;
+    padding-top: 143.3px;
+    padding-bottom: 96.5px;
+    max-width: 100%;
+}
+#contact input, #contact textarea {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2.14px solid #C6C6C6;
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    resize: none;
+    padding-left: 36px;
+    font: 300 21.46px/24px 'Ubuntu', sans-serif;
+    letter-spacing: -0.04px;
+    color: #B2B2B2;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+#contact .form-control {
+    box-shadow: none;
+}
+#contact .form-label {
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    font: 500 21.46px/24px 'Ubuntu', sans-serif;
+    letter-spacing: -0.04px;
+    color: #B2B2B2;
+    padding-left: 36px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+#contact .isFocused .form-label {
+    transform: translateY(-120%) !important;
+    -webkit-transform: translateY(-120%) !important;
+    -moz-transform: translateY(-120%) !important;
+    -ms-transform: translateY(-120%) !important;
+    -o-transform: translateY(-120%) !important;
+}
+#contact h3 {
+    position: relative;
+    color: #FFFFFF;
+    font: 700 30px/34px 'Ubuntu', sans-serif;
+    padding-bottom: 60.1px;
+    margin-bottom: 0;
+}
+#contact h3:after {
+    display: none;
+}
+#contact textarea {
+    margin-top: 142.5px;
+}
+#contact .submit-button {
+    margin-top: 73.6px;
+}
+#contact .submit-button .btn {
+    background: linear-gradient(to top, rgba(0,6,90,.74) 0%,rgba(69,0,99, .74) 80%,rgba(52,0,74,.59) 100%);
+    font: 700 29.7px/39px 'Roboto', sans-serif;
+    color: #FFFFFF;
+    padding: 24px 81px;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: none;
+}
+#contact .empty input, #contact .empty textarea {
+    border-bottom: 2.14px solid #EF5E14;
+}
+#contact .empty .form-label {
+    color: #EF5E14 !important;
+}
+#contact .mismatch {
+    color: #EF5E14 !important;
+}
+@media only screen and (max-width: 600px) {
+    #contact textarea {
+        margin-top: 0px;
+    }
+    #contact input, #contact textarea {
+        margin-bottom: 50px;
+        padding-left: 15px !important;
+        font: 300 15.46px/15px 'Ubuntu', sans-serif;
+    }
+    #contact .form-label {
+        padding-left: 15px;
+        font: 500 15.46px/15px 'Ubuntu', sans-serif;
+    }
+    #contact .submit-button {
+        margin-top: 40px;
+        transform: scale(.7);
+        -webkit-transform: scale(.7);
+        -moz-transform: scale(.7);
+        -ms-transform: scale(.7);
+        -o-transform: scale(.7);
+    }
+}
+/*contact section end*/
+/*footer section start*/
+#footer {
+    background: #343434;
+    max-width: 100%;
+}
+#footer .footer-gradient {
+    background: linear-gradient(to right,rgba(47,61,252,.35),rgba(100,17,135,.35),rgba(100,17,135,.35));
+    padding-top: 80.1px;
+    padding-bottom: 70.1px;
+}
+#footer p {
+    font: 500 16.96px/20.36px 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    max-width: 170px;
+}
+#footer .mail-number svg {
+    margin-bottom: 10.6px;
+    width: 27.24px;
+    margin-right: 2px;
+}
+#footer h6 {
+    display: inline;
+    font: 700 16.96px/20.36px 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 10.6px;
+}
+#footer .mail-number {
+    max-width: 220px;
+}
+#footer .social {
+    text-align: right;
+}
+#footer .social p {
+    max-width: 100%;
+    margin-top: 11.4px;
+}
+#footer .social a {
+    margin-left: 20px;
+}
+#footer .social a svg {
+    fill: #FFFFFF;
+    opacity: .7;
+}
+#footer .social a svg:hover {
+    fill: #FFFFFF;
+    opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+
+    #footer .social {
+        text-align: left;
+    }
+    #footer .col-lg {
+        margin-bottom: 30px;
+        padding-left: 30px;
+    }
+    #footer p {
+        margin: 0;
+    }
+}
+/*footer section end*/
+/*back to top section start*/
+.bttop {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    box-sizing: border-box;
+    border-radius: 3px;
+    bottom: -60px;
+    right: 15px;
+    text-align: center;
+    padding-top: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.bttop svg {
+    cursor: pointer;
+}
+@keyframes bttopanimation {
+    from {bottom: -60px}
+    to {bottom: 30px}
+
+}
+@-webkit-keyframes bttopanimation {
+    from {bottom: -60px}
+    to {bottom: 30px}
+
+}
+@keyframes bttopanimationtwo {
+    from {bottom: 30px}
+    to {bottom: -60px}
+
+}
+@-webkit-keyframes bttopanimationtwo {
+    from {bottom: 30px}
+    to {bottom: -60px}
+
+}
+/*back to top section end*/
+
